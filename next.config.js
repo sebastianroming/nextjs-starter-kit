@@ -20,5 +20,6 @@ const nextConfig = {
     ]
   },*/
 }
+/* foobar */
 
 module.exports = nextConfig
