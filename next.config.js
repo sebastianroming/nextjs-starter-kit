@@ -23,3 +23,4 @@ const nextConfig = {
 /* foobar */
 
 module.exports = nextConfig
+console.log("VERCEL_URL", process.env.VERCEL_URL)
