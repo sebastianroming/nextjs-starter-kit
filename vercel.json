@@ -8,7 +8,7 @@
     }
   ],
   "functions": {
-    "api/hello": {
+    "src/pages/api/hello.js": {
       "runtime": "@vercel/node@1.15.4"
     }
   }
