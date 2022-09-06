@@ -9,7 +9,7 @@
   ],
   "functions": {
     "api/hello.js": {
-      "runtime": "14.x"
+      "runtime": "nodejs14.x"
     }
   }
 }
