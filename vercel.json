@@ -9,7 +9,6 @@
   ],
   "functions": {
     "api/hello.js": {
-      "runtime": "@vercel/node"
     }
   }
 }
