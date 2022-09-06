@@ -1,7 +1,7 @@
 export default function Blocked() {
 
   return(
-    <h1>Blocked from DE</h1>
+    <h1>Blocked from AT</h1>
   )
 
 }

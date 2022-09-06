@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server'
 
 // Block Austria, prefer Germany
-const BLOCKED_COUNTRY = 'DE'
+const BLOCKED_COUNTRY = 'AT'
 
 // Limit middleware pathname config
 export const config = {
