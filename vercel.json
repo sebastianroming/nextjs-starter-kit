@@ -6,5 +6,10 @@
         { "key": "Access-Control-Allow-Origin", "value": "null" }
       ]
     }
-  ]
+  ],
+  "functions": {
+    "api/hello.js": {
+      "runtime": "14.x"
+    }
+  }
 }
