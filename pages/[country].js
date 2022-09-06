@@ -1,7 +1,11 @@
-export default function Country() {
+import { useRouter } from 'next/router'
 
-  return(
-    <h1>Not blocked from ${country}</h1>
-  )
+const AllowedPage = () => {
+  const {
+    query: { country },
+  } = useRouter()
 
+  return <p>{`Greetings from ${country}, where you are not blocked.`}</p>
 }
+
+export default AllowedPage
