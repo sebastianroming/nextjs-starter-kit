@@ -1,9 +1,9 @@
 import { NextResponse } from "next/server";
-export async function middleware(req) {
+export function middleware(req) {
 
   console.log("request", req);
 
-  const nextUrl = req.nextUrl;
+  /*const nextUrl = req.nextUrl;
   const { geo } = req;
   const country = geo.country || "NULL";
   const city = geo.city || "NULL";
@@ -15,7 +15,8 @@ export async function middleware(req) {
   nextUrl.searchParams.set("region", region);
   nextUrl.searchParams.set("timezone", timezone);
   nextUrl.searchParams.set("ip", ip);
-  console.log("NextURL", nextUrl);
+  console.log("NextURL", nextUrl);*/
   //NextResponse.rewrite(nextUrl);
-  return NextResponse.rewrite(nextUrl);
+  //return NextResponse.rewrite(nextUrl);
+  return NextResponse.rewrite(req.nextUrl);
 }
