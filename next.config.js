@@ -2,6 +2,15 @@
 const nextConfig = {  
   reactStrictMode: true,
   swcMinify: true,
+  async redirects() {
+    return [
+      {
+        source: "/what-is/",
+        destination: "/what-is-payroll/",
+        permanent: true
+      }
+    ]
+  },
   async rewrites() {
     return [
       {
