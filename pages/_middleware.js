@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 
 export function middleware(req) {
 
-  console.log("request", req);
+  //console.log("request", req);
 
   const nextUrl = req.nextUrl;
   const { geo } = req;
