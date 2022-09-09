@@ -9,6 +9,8 @@ export const config = {
 }
 
 export function middleware(req) {
+
+  console.log("request", req);
   // Extract country
   const country = req.geo.country || 'US'
 
