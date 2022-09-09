@@ -2,7 +2,7 @@
 export default function Payroll() {
 
   return(
-    <p>What is Payroll?</p>
+    <p>Here we are at /what-is-payroll/, which means, it worked!</p>
   )
 
 }
