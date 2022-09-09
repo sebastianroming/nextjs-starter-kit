@@ -1,8 +1,9 @@
+import Link from 'next/link'
 
 export default function WhatIs() {
 
   return(
-    <a href="/what-is/">What is payroll</a>
+    <Link href="/what-is/"><a>What is payroll</a></Link>
   )
 
 }
