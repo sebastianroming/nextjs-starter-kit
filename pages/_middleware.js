@@ -1,4 +1,10 @@
 import { NextResponse } from "next/server";
+
+// Limit middleware pathname config
+export const config = {
+  matcher: '/',
+}
+
 export function middleware(req) {
 
   console.log("request", req);
@@ -18,5 +24,16 @@ export function middleware(req) {
   console.log("NextURL", nextUrl);*/
   //NextResponse.rewrite(nextUrl);
   //return NextResponse.rewrite(nextUrl);
-  return NextResponse.rewrite(req.nextUrl);
+  // Extract country
+  const country = req.geo.country || 'US'
+
+  // Specify the correct pathname
+  if (country === BLOCKED_COUNTRY) {
+    req.nextUrl.pathname = '/blocked'
+  } else {
+    req.nextUrl.pathname = `/${country}`
+  }
+
+  // Rewrite to URL
+  return NextResponse.rewrite(req.nextUrl)
 }
