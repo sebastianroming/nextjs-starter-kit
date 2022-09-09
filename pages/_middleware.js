@@ -17,5 +17,6 @@ export function middleware(req) {
   nextUrl.searchParams.set("timezone", timezone);
   nextUrl.searchParams.set("ip", ip);  
   //NextResponse.rewrite(nextUrl);
+  NextResponse.rewrite(nextUrl);
   return NextResponse.rewrite(nextUrl);
 }
