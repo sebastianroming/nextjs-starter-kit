@@ -7,6 +7,9 @@
       ]
     }
   ],
+  "rewrites": [
+    {"source": ":match*", "destination": "https://app-formation-tools-app.vercel.app/:match*"}
+  ],
   "functions": {
     "src/pages/api/hello.js": {
       "runtime": "@vercel/node@1.15.4"
