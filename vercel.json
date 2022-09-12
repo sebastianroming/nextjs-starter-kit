@@ -8,7 +8,10 @@
     }
   ],
   "rewrites": [
-    {"source": ":match*", "destination": "https://app-formation-tools-app.vercel.app/:match*"}
+    {
+      "source": "(.*)", 
+      "destination": "https://app-formation-tools-app.vercel.app/"
+    }
   ],
   "functions": {
     "src/pages/api/hello.js": {
