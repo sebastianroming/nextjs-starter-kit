@@ -9,8 +9,12 @@
   ],
   "rewrites": [
     {
-      "source": "(.*)", 
+      "source": "/", 
       "destination": "https://app-formation-tools-app.vercel.app/"
+    },
+    {
+      "source": "/:match*", 
+      "destination": "https://app-formation-tools-app.vercel.app/:match*"
     }
   ],
   "functions": {
