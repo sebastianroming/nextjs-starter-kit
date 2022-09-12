@@ -2,7 +2,7 @@
 const nextConfig = {  
   reactStrictMode: true,
   swcMinify: true,
-  trailingSlash: true,
+  trailingSlash: false,
   async redirects() {
     return [
       {
