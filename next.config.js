@@ -6,8 +6,8 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: "/what-is/",
-        destination: "/what-is-payroll/",
+        source: "/what-is",
+        destination: "/what-is-payroll",
         permanent: true
       }
     ]
@@ -31,5 +31,6 @@ const nextConfig = {
   },*/
 }
 /* foobar */
+console.log(process.version);
 
 module.exports = nextConfig
