@@ -4,7 +4,7 @@ export default function WhatIs() {
 
   return(
     <>
-      <Link href="/what-is/"><a>TESTThis Link goes to: /what-is/</a></Link>
+      <Link href="/what-is/"><a>TEST 2This Link goes to: /what-is/</a></Link>
     </>
   )
 
