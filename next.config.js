@@ -1,37 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {  
   reactStrictMode: true,
-  swcMinify: true,
-  trailingSlash: false,
-  async redirects() {
-    return [
-      {
-        source: "/what-is",
-        destination: "/what-is-payroll",
-        permanent: true
-      }
-    ]
+  images: {
+    domains: [
+      'res.cloudinary.com',
+    ],
   },
-  async rewrites() {
-    return [
-      {
-        source: "/./hello",
-        destination: "/api/hello"
-      }
-    ]
-  },
-  /*async redirects() {
-    return [
-      {
-        source: "/./hello",
-        destination: "/api/hello",
-        permanent: false
-      },
-    ]
-  },*/
+  swcMinify: true
 }
-/* foobar */
-console.log(process.version);
-console.log(process.env.TEST_ENV_VAR);
+
+console.log(process.env.NODE_ENV);
+
+console.log("VERCEL_URL", process.env.VERCEL_URL);
 
 module.exports = nextConfig
