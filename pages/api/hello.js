@@ -2,7 +2,9 @@
 
 export default function handler(req, res) {
   console.log(process.version);
-  const country = req.headers.get('x-vercel-ip-country');
+  //const country = req.headers.get('x-vercel-ip-country');
+  const country = "XX";
+  console.log(JSON.stringify(req));
   console.log(country);
   res.status(200).json({ name: 'John Doe', country })
 }
