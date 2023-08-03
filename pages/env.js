@@ -1,3 +1,4 @@
+import Link from 'next/link'
 
 import styles from '../styles/Env.module.css'
 
@@ -67,7 +68,11 @@ export default function Env() {
           <code>{envvar.value || 'undefined'}</code>
         </div>
       ))}
+      <div className={styles.url}>
+        Repo URL to this file:<br />
+        <Link href="https://github.com/sebastianroming/nextjs-starter-kit/blob/dev/pages/env.js">https://github.com/sebastianroming/nextjs-starter-kit/blob/dev/pages/env.js</Link>
       </div>
+    </div>
   )
 
 }
