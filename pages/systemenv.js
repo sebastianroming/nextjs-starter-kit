@@ -76,7 +76,7 @@ const ENV_VARS = [
 
 export default function Env() {
 
-  console.log(process.env);
+  console.log("env", process.env);
 
   return (
     <div className={styles.outer}>
