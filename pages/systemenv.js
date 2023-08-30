@@ -74,7 +74,7 @@ const ENV_VARS = [
 ]
 
 
-export default function Env() {
+export default function SystemEnv() {
 
   console.log("env", process.env);
 
