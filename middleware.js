@@ -11,8 +11,7 @@ export const config = {
      * - sitemap.html (sitemap file for humans)
      * - /br (Brazilian version of the site)
      */
-    //"/((?!api|_next/static|_next/image|_next/data|favicon.ico|sitemap.xml|robots.txt|sitemap.html|br|(?!br/:path\\?paginas=.*)).*)"
-    '/((?!api|_next/static|_next/image|favicon.ico).*)',
+    "/((?!api|_next/static|_next/image|_next/data|favicon.ico|sitemap.xml|robots.txt|sitemap.html|test|(?!test/:path\\?paginas=.*)).*)"
   ],
 };
  
