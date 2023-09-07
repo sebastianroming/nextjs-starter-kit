@@ -17,14 +17,5 @@ export const config = {
 };
  
 export default function middleware(request) {
-
-  console.log(request);
-
-  const referrer = request.referrer || 'not specified';
-
-  const _redirect = new Response();
-  _redirect.headers.set('X-Custom-Referrer-Header', referrer);
-
-  return _redirect.redirect(new URL('/api/referer', request.url));;
-
+  return Response.redirect(new URL('/test', request.url));
 }
