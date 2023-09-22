@@ -32,6 +32,9 @@ const nextConfig = {
 }
 /* foobar */
 console.log(process.version);
+console.log("------------------------------------------------------------------------------------------");
+console.log(process.env);
+console.log("------------------------------------------------------------------------------------------");
 console.log(process.env.TEST_ENV_VAR);
 
 module.exports = nextConfig
